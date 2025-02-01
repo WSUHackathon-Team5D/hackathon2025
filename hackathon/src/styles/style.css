@@ -672,6 +672,9 @@ body .fyp-container .fyp .right .post-container .post .controls {
 body .fyp-container .fyp .right .post-container .post .controls svg {
   width: 2rem;
 }
+body .fyp-container .fyp .right .post-container .post .controls .cont {
+  font-size: 1.8rem;
+}
 body .fyp-container .fyp .right .post-container .post .controls .up,
 body .fyp-container .fyp .right .post-container .post .controls .down {
   background: #CAA8F5;
