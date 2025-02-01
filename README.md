@@ -2,6 +2,9 @@
 
 Facebook for your pets!
 
+## Dockerhub
+https://hub.docker.com/repository/docker/rdalless/hackathon2025/general
+
 ## Frontend
 
 ### Building the image
