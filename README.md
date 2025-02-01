@@ -76,6 +76,7 @@ docker stop container_name
 # remove an image
 docker rm ID_or_Name
 ```
-##database 
+## database 
+to run the database run this command docker run --name my-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres is should be the same in bash and PowerShell then run backend/tablecreation.sql
 
 
