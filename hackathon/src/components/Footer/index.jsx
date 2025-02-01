@@ -5,7 +5,7 @@ const Footer = () => {
         <Fragment>
             <div className="footer-container">
                 <div className="footer">
-                    &copy; Copyright `our group` 2025
+                    &copy; Copyright Team5D Hackathon 2025
                 </div>
             </div>
         </Fragment>

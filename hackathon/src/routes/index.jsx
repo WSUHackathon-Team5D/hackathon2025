@@ -5,6 +5,7 @@ import Login from '../components/Login'
 import Error from '../components/Error'
 import Signup from '../components/Signup'
 import Account from '../components/Account'
+import Fyp from '../components/Fyp'
 
 const Routes = () => {
     const route = useRoutes(
@@ -20,6 +21,10 @@ const Routes = () => {
                     {
                         path: '/account',
                         element: <Account />
+                    },
+                    {
+                        path: '/fyp',
+                        element: <Fyp />
                     }
                 ]
             },

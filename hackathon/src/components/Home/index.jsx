@@ -15,7 +15,7 @@ const Home = () => {
                 <div className="right">
                     <div className="title-container">
                         <div className="title">
-                            Faceoff
+                            PetBook
                         </div>
                     </div>
                     <div className="desc">
