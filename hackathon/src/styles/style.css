@@ -616,6 +616,49 @@ body .account-container .account .right .post-container .post .captions {
   background: linear-gradient(rgba(0, 0, 0, 0), black);
   color: white;
 }
+body .fyp-container {
+  width: 100vw;
+  padding: 2rem;
+  height: calc(100vh - 9.8rem);
+  overflow-y: scroll;
+}
+body .fyp-container .fyp {
+  width: 100%;
+}
+body .fyp-container .fyp .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .fyp-container .fyp .right .post-container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+}
+body .fyp-container .fyp .right .post-container .post {
+  width: 40%;
+  background: #cecece;
+  border-radius: 0.3rem;
+  aspect-ratio: 3/4;
+}
+body .fyp-container .fyp .right .post-container .post .image-container {
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+}
+body .fyp-container .fyp .right .post-container .post .image-container img {
+  width: 100%;
+}
+body .fyp-container .fyp .right .post-container .post .controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+body .fyp-container .fyp .right .post-container .post .controls svg {
+  width: 2.5rem;
+}
 body .footer-container {
   position: fixed;
   bottom: 0;

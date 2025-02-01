@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useRef, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 // import useAxiosPrivate from '../../hooks/useAxiosPrivate'
-// import axios from '../../api/axios'
+import axios from '../../api/axios'
 // import { toast, useToast } from "react-toastify";
 // import useToast from '../../hooks/useToast';
 // import "react-toastify/ReactToastify.min.css";
@@ -74,8 +74,6 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        alert('asdf')
-
         const emailValid = EMAIL_REGEX.test(email)
         const fnameValid = USER_REGEX.test(fname)
         const lnameValid = USER_REGEX.test(lname)
@@ -92,16 +90,12 @@ const Signup = () => {
     }
 
     const postData = async (fname, lname, password, email) => {
-        // try {
-        //     await axios
-        //         .post(REGISTER_URL, { fname, lname, email, password })
-        //         .then(() => {
-        //             navigate('/')
-        //             successNotification("User Created Successfully")
-        //         })
-        // } catch (err) {
-        //     errorNotification(err)
-        // }
+        try {
+            await axios
+                .post(REGISTER_URL, { fname, lname, email, password })
+        } catch (err) {
+            console.error(err)
+        }
     }
 
     return (

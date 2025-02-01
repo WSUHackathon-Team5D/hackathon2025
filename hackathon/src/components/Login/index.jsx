@@ -2,8 +2,10 @@ import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useRef, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import axios from '../../api/axios'
 
 const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+const LOGIN_URL = '/auth'
 
 const Login = () => {
 
@@ -32,39 +34,13 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        // try {
-        //     await axiosPrivate
-        //         .post(
-        //             LOGIN_URL,
-        //             {
-        //                 email,
-        //                 password: pass,
-        //             }
-        //         )
-        //         .then(
-        //             res => {
-        //                 const { accessToken, email, profileImage } = res?.data
-        //                 setAuth({ accessToken, email, profileImage })
-        //                 navigate('/', { state: { from: location }, replace: true })
-        //                 successNotification("User logged in")
-        //             }
-        //         )
-        //     resetEmail()
-        //     setPass('')
-        // } catch (err) {
-        //     console.log(err)
-        //     if (!err?.response) {
-        //         console.log('No Server Response')
-        //     } else if (err.reponse?.status === 400) {
-        //         errorNotification('Missing Email or Password')
-        //     } else if (err.response?.status === 401) {
-        //         errorNotification('Unauthorized')
-        //     } else if (err.response?.status === 403) {
-        //         errorNotification('Invalid Username or Password')
-        //     } else {
-        //         errorNotification('Login Failed')
-        //     }
-        // }
+        try {   
+            axios.post(LOGIN_URL, {
+                email, pass
+            })
+        } catch (err) {
+            console.error(err)
+        }
 
     }
 

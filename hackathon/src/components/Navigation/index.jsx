@@ -12,7 +12,7 @@ const Navigation = () => {
                     <div className="links-container">
                         <div className="links">
                             <Link to={'/'} className="link">Home</Link>
-                            <Link to="#" className="link">Chat</Link>
+                            <Link to={'/account'} className="link">Account</Link>
                             <Link to="#" className="link">Contact</Link>
                             <Link to="#" className="link">Page</Link>
                         </div>
