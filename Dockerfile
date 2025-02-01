@@ -1,3 +1,15 @@
-FROM httpd:2.4
+FROM node:23-alpine
 
-COPY ./hackathon/ /usr/local/apache2/htdocs/
+WORKDIR ~/hackathon/
+
+COPY public/ .
+COPY src/ .
+COPY package.json .
+
+RUN npm install
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+
+
