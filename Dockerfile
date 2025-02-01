@@ -2,9 +2,9 @@ FROM node:23-alpine
 
 WORKDIR ~/hackathon/
 
-COPY public/ .
-COPY src/ .
-COPY package.json .
+COPY hackathon/public/ .
+COPY hackathon/src/ .
+COPY hackathon/package.json .
 
 RUN npm install
 
