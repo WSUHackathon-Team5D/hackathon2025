@@ -3,6 +3,7 @@ import Layout from '../components/layouts'
 import Home from '../components/Home'
 import Login from '../components/Login'
 import Error from '../components/Error'
+import Signup from '../components/Signup'
 
 const Routes = () => {
     const route = useRoutes(
@@ -20,6 +21,10 @@ const Routes = () => {
             {
                 path: '/login',
                 element: <Login />
+            },
+            {
+                path: '/signup',
+                element: <Signup />
             },
             {
                 path: '*',

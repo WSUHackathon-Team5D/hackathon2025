@@ -323,4 +323,217 @@ body {
             // background-image: url("../../public/images/back.svg");
         }
     }
+    .signup {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+
+        .info {
+            height: 100%;
+            width: 32.5%;
+            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>");
+            // background-image: url("../../public/images/back.svg");
+        }
+
+        .signup_container {
+            overflow: scroll;
+            width: 67.5%;
+            padding: 3rem;
+
+            .container {
+                width: 42.5%;
+
+                .header {
+                    width: 100%;
+                    margin: 0 0 1rem 0;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 55%;
+
+                        img {
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .title {
+                    // font-family: $title_font;
+                    // color: $secondary_color;
+                    font-size: 2rem;
+                    // border: 1px solid black;
+                }
+
+                .api_login {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    row-gap: 0.75rem;
+                    padding: 1rem 0;
+
+                    button {
+                        width: 100%;
+                        aspect-ratio: 6 / 1;
+                        border: 1px solid black;
+                        // color: $dark_color;
+                        border-radius: 0.2rem;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 0 6rem;
+                        cursor: pointer;
+                        transition: 0.2s ease-out;
+
+                        &:hover {
+                            border-radius: 2rem;
+                        }
+
+                        svg {
+                            fill: black;
+                            margin: 0 0.25rem 0 0;
+                        }
+
+                        span {
+                            width: 50%;
+                            font-size: 1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+
+                .separator {
+                    width: 100%;
+                    position: relative;
+                    margin: 0.5rem 0;
+
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        translate: -50% -50%;
+                        color: black;
+                        font-size: 0.8rem;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 45%;
+                        background: black;
+                        height: 1px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 45%;
+                        background: black;
+                        height: 1px;
+                    }
+                }
+
+                .signup_form {
+                    margin: 2rem 0 0 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 0.5rem;
+
+                    .input_container {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .desc {
+                            color: black;
+                            font-size: 0.775rem;
+                            font-weight: 700;
+                        }
+
+                        input {
+                            width: 100%;
+                            border: 1px solid black;
+                            aspect-ratio: 7.5 / 1;
+                            border-radius: 0.2rem;
+                            margin: 0.5rem 0 0 0;
+                            padding: 0 0.75rem;
+                        }
+
+                        .errMsg {
+                            font-size: 0.6rem;
+                            padding: 0 0 0 0.05rem;
+                            color: red;
+                        }
+                    }
+
+                    .terms_container {
+                        width: 100%;
+                        margin: 0 0.15rem;
+                        display: flex;
+                        align-items: center;
+
+                        input[type="checkbox"] {
+                            cursor: pointer;
+                            margin: 0 0.5rem 0 0;
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+
+                        .desc {
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            color: black;
+
+                            a {
+                                font-weight: 400;
+                                color: orange;
+                            }
+                        }
+                    }
+
+                    input[type="submit"] {
+                        background: orange;
+                        border: 1px solid black;
+                        width: 100%;
+                        aspect-ratio: 5.35 / 1;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        border-radius: 0.2rem;
+                        cursor: pointer;
+                        transition: 0.2s ease-out;
+
+                        &:hover {
+                            border-radius: 2rem;
+                        }
+                    }
+                }
+
+                .signup_footer {
+                    width: 100%;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    // color: $light_text_color;
+
+                    a {
+                        font-weight: 400;
+                        // color: $primitive_color;
+                    }
+                }
+            }
+        }
+    }
 }
