@@ -19,8 +19,8 @@ const Navigation = () => {
                     </div>
                     <div className="btn-container">
                         <div className="btn">
-                            <button className="btn_primary"><div className="span">Login</div></button>
-                            <button className="btn_secondary">Signup</button>
+                            <Link to={'/login'} className="btn_primary">Login</Link>
+                            <Link to={'/signup'} className="btn_secondary">Signup</Link>
                         </div>
                     </div>
                 </div>

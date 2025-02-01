@@ -1,9 +1,13 @@
+$accent-color: #CAA8F5;
+$primary-color: #592E83;
+$secondary-color: #230C33;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    color: #000;
+    color: $secondary-color;
     text-decoration: none;
     border: none;
     background: none;
@@ -11,17 +15,21 @@
 }
 
 body {
+    background: #eee;
+    overflow-x: hidden;
+
     .navigation-container {
         width: 100vw;
         height: 4rem;
-        margin: .2rem;
+        padding: .4rem;
 
         .navigation {
-            width: calc(100% - .4rem);
-            height: 100%;
+            width: 100%;
+            height: 4rem;
             display: flex;
             flex-direction: row;
-            background: rgba(blue, .5);
+            justify-content: space-between;
+            background: rgba($secondary-color, .3);
             border-radius: .3rem;
 
             .logo-container {
@@ -35,7 +43,7 @@ body {
             }
 
             .links-container {
-                width: 50%;
+                width: 40%;
                 height: 100%;
                 display: flex;
                 align-items: center;
@@ -49,15 +57,16 @@ body {
                     align-items: center;
 
                     .link {
-                        font-size: .8rem;
+                        font-size: .95rem;
+                        font-weight: 500;
                         position: relative;
-                        text-transform: capitalize;
+                        text-transform: uppercase;
 
                         &::after {
                             content: '';
                             width: 0;
-                            height: .06rem;
-                            background-color: black;
+                            height: .1rem;
+                            background-color: $secondary-color;
                             position: absolute;
                             left: 50%;
                             translate: -50% -50%;
@@ -73,7 +82,7 @@ body {
             }
 
             .btn-container {
-                width: 30%;
+                width: 20%;
                 height: 100%;
                 display: flex;
                 align-items: center;
@@ -85,7 +94,6 @@ body {
                     display: flex;
                     align-items: center;
                     margin: 0 6rem;
-                    gap: 2rem;
                     justify-content: center;
 
                     .btn_primary {
@@ -94,21 +102,29 @@ body {
                         aspect-ratio: 5 / 2;
                         transition: .3s ease;
                         cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1rem;
 
                         &:hover {
-                            color: blue;
+                            color: $primary-color;
                         }
                     }
 
                     .btn_secondary {
                         height: 75%;
                         aspect-ratio: 5 / 2;
-                        background-color: orange;
+                        background-color: $accent-color;
                         border-radius: .2rem;
-                        border: 1px solid black;
+                        border: 1px solid $secondary-color;
                         font-size: .8rem;
                         cursor: pointer;
                         transition: .3s ease;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1rem;
 
                         &:hover {
                             border-radius: 2rem;
@@ -118,6 +134,7 @@ body {
             }
         }
     }
+
     .signin {
         width: 100vw;
         height: 100vh;
@@ -149,7 +166,7 @@ body {
 
                 .title {
                     // font-family: $title_font;
-                    // color: $secondary_color;
+                    color: $secondary_color;
                     font-size: 2rem;
                 }
 
@@ -165,7 +182,7 @@ body {
                     button {
                         width: 100%;
                         aspect-ratio: 6 / 1;
-                        border: 1px solid black;
+                        border: 1px solid $secondary-color;
                         // color: $dark_color;
                         border-radius: 0.2rem;
                         font-size: 1rem;
@@ -206,7 +223,7 @@ body {
                         top: 0;
                         left: 50%;
                         translate: -50% -50%;
-                        // color: $light_text_color;
+                        color: $secondary-color;
                         font-size: 0.8rem;
                     }
 
@@ -216,7 +233,7 @@ body {
                         top: 0;
                         left: 0;
                         width: 45%;
-                        background: black;
+                        background: $secondary-color;
                         height: 1px;
                     }
 
@@ -226,7 +243,7 @@ body {
                         top: 0;
                         right: 0;
                         width: 45%;
-                        background: black;
+                        background: $secondary-color;
                         height: 1px;
                     }
                 }
@@ -245,14 +262,14 @@ body {
                         flex-direction: column;
 
                         .desc {
-                            // color: $dark_text_color;
+                            color: $secondary-color;
                             font-size: 0.775rem;
                             font-weight: 700;
                         }
 
                         input {
                             width: 100%;
-                            border: 1px solid black;
+                            border: 1px solid $secondary-color;
                             aspect-ratio: 7.5 / 1;
                             border-radius: 0.4rem;
                             margin: 0.3rem 0 0 0;
@@ -276,12 +293,12 @@ body {
                         .desc {
                             font-size: 0.9rem;
                             font-weight: 500;
-                            // color: $light_text_color;
+                            color: $primary-color;
                         }
                     }
 
                     input[type="submit"] {
-                        background: orange;
+                        background: $accent-color;
                         border: 1px solid black;
                         width: 100%;
                         aspect-ratio: 5.35 / 1;
@@ -304,7 +321,7 @@ body {
 
                     a {
                         font-weight: 400;
-                        // color: $primitive_color;
+                        color: $primary-color;
                     }
                 }
             }
@@ -313,8 +330,303 @@ body {
         .info {
             width: 67.5%;
             height: 100%;
-            background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>")
-            // background-image: url("../../public/images/back.svg");
+            // background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>")
+            // background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>")
+            background-image: url("../../public/images/back.svg");
+        }
+    }
+
+    .signup {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+
+        .info {
+            height: 100%;
+            width: 32.5%;
+            // background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>");
+            background-image: url("../../public/images/back1.svg");
+        }
+
+        .signup_container {
+            overflow: scroll;
+            width: 67.5%;
+            padding: 3rem;
+
+            .container {
+                width: 42.5%;
+
+                .header {
+                    width: 100%;
+                    margin: 0 0 1rem 0;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 55%;
+
+                        img {
+                            width: 100%;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .title {
+                    // font-family: $title_font;
+                    color: $secondary_color;
+                    font-size: 2rem;
+                    // border: 1px solid black;
+                }
+
+                .api_login {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    row-gap: 0.75rem;
+                    padding: 1rem 0;
+
+                    button {
+                        width: 100%;
+                        aspect-ratio: 6 / 1;
+                        border: 1px solid black;
+                        color: $secondary-color;
+                        border-radius: 0.2rem;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 0 6rem;
+                        cursor: pointer;
+                        transition: 0.2s ease-out;
+
+                        &:hover {
+                            border-radius: 2rem;
+                        }
+
+                        svg {
+                            fill: $secondary-color;
+                            margin: 0 0.25rem 0 0;
+                        }
+
+                        span {
+                            width: 50%;
+                            font-size: 1rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+
+                .separator {
+                    width: 100%;
+                    position: relative;
+                    margin: 0.5rem 0;
+
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        translate: -50% -50%;
+                        color: $secondary-color;
+                        font-size: 0.8rem;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 45%;
+                        background: $secondary-color;
+                        height: 1px;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 45%;
+                        background: $secondary-color;
+                        height: 1px;
+                    }
+                }
+
+                .signup_form {
+                    margin: 2rem 0 0 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 0.5rem;
+
+                    .input_container {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .desc {
+                            color: $secondary-color;
+                            font-size: 0.775rem;
+                            font-weight: 700;
+                        }
+
+                        input {
+                            width: 100%;
+                            border: 1px solid $secondary-color;
+                            aspect-ratio: 7.5 / 1;
+                            border-radius: 0.2rem;
+                            margin: 0.5rem 0 0 0;
+                            padding: 0 0.75rem;
+                        }
+
+                        .errMsg {
+                            font-size: 0.6rem;
+                            padding: 0 0 0 0.05rem;
+                            color: red;
+                        }
+                    }
+
+                    .terms_container {
+                        width: 100%;
+                        margin: 0 0.15rem;
+                        display: flex;
+                        align-items: center;
+
+                        input[type="checkbox"] {
+                            cursor: pointer;
+                            margin: 0 0.5rem 0 0;
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+
+                        .desc {
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            color: black;
+
+                            a {
+                                font-weight: 400;
+                                color: $primary-color;
+                            }
+                        }
+                    }
+
+                    input[type="submit"] {
+                        background: $accent-color;
+                        border: 1px solid black;
+                        width: 100%;
+                        aspect-ratio: 5.35 / 1;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        border-radius: 0.2rem;
+                        cursor: pointer;
+                        transition: 0.2s ease-out;
+
+                        &:hover {
+                            border-radius: 2rem;
+                        }
+                    }
+                }
+
+                .signup_footer {
+                    width: 100%;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    // color: $light_text_color;
+
+                    a {
+                        font-weight: 400;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        margin: 4rem;
+        display: flex;
+
+        .left {
+            margin: 2rem;
+
+            .image-container {
+                width: 100%;
+                height: 100%;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        border-radius: .5rem;
+                    }
+                }
+            }
+        }
+
+        .right {
+            margin: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            .title-container {
+                font-size: 4rem;
+                font-weight: 800;
+            }
+
+            .desc {
+                font-size: .9rem;
+                font-weight: 400;
+            }
+
+            .btn-container {
+                margin: 3rem 0;
+                height: 4rem;
+
+                .btn {
+                    height: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    aspect-ratio: 3 / 1;
+                    font-size: 1.25rem;
+                    border: 1px solid $secondary-color;
+                    background-color: $accent-color;
+                    border-radius: .2rem;
+                    transition: .2s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-container {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        padding: .4rem;
+
+        .footer {
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba($secondary-color, .3);
+            height: 4rem;
+            border-radius: .3rem;
         }
     }
 }
