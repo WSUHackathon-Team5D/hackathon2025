@@ -7,11 +7,11 @@ const Navigation = () => {
             <div className="navigation-container">
                 <div className="navigation">
                     <div className="logo-container">
-                        <div className="logo">Holo</div>
+                        <Link to={'/'} className="logo">Holo</Link>
                     </div>
                     <div className="links-container">
                         <div className="links">
-                            <Link to="#" className="link">Home</Link>
+                            <Link to={'/'} className="link">Home</Link>
                             <Link to="#" className="link">Chat</Link>
                             <Link to="#" className="link">Contact</Link>
                             <Link to="#" className="link">Page</Link>
