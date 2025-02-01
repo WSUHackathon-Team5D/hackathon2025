@@ -8,6 +8,7 @@ Lname varchar(50)
 CREATE TABLE IF NOT EXISTS "pet"(
     petname varchar(50) NOT null,
     piepic VARBINARY(MAX)
-    Email varchar(50) NOT null,
-    likes INT
-)
+    constraint owner_email foreign key (Email),
+    likes INT,
+    imageId INT UNIQUE not null primary key
+);
