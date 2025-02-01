@@ -48,7 +48,12 @@ Facebook for your pets!
                                                                                       .+##
                                                                                         =%
 </pre>
+## Videos
+30 second overview
+https://www.youtube.com/watch?v=pgCjHDKeriA
 
+2 minute pitch
+https://www.youtube.com/watch?v=_HQ8iIQS11Y
 
 ## CI/CD
 This site has a ci/cd pipeline. When a tagged commit is pushed to github, a github workflow triggers, building the frontend docker image and pushing it to Dockerhub. Dockerhub then sends out a webhook to an AWS instance that triggers a deploy script. This script stops and removes the current image, pulls the update image, and starts the new container. 
