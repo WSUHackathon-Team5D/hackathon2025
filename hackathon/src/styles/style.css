@@ -34,6 +34,12 @@ body .navigation-container .navigation .logo-container {
   align-items: center;
   justify-content: center;
 }
+body .navigation-container .navigation .logo-container .logo {
+  height: 90%;
+}
+body .navigation-container .navigation .logo-container .logo img {
+  height: 100%;
+}
 body .navigation-container .navigation .links-container {
   width: 40%;
   height: 100%;
@@ -593,16 +599,16 @@ body .account-container .account .right .post-container {
 }
 body .account-container .account .right .post-container .post {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1;
   position: relative;
 }
 body .account-container .account .right .post-container .post .image-container {
   width: 100%;
-  height: 80%;
   border-radius: 0.3rem;
+  aspect-ratio: 1;
 }
 body .account-container .account .right .post-container .post .image-container img {
-  width: 100%;
+  height: 100%;
 }
 body .account-container .account .right .post-container .post .captions {
   position: absolute;
@@ -614,6 +620,7 @@ body .account-container .account .right .post-container .post .captions {
   width: 100%;
   height: 5rem;
   background: linear-gradient(rgba(0, 0, 0, 0), black);
+  padding: 0 1rem;
   color: white;
 }
 body .fyp-container {
@@ -636,6 +643,7 @@ body .fyp-container .fyp .right .post-container {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
+  gap: 2rem;
 }
 body .fyp-container .fyp .right .post-container .post {
   width: 40%;

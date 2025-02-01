@@ -7,14 +7,15 @@ const Navigation = () => {
             <div className="navigation-container">
                 <div className="navigation">
                     <div className="logo-container">
-                        <Link to={'/'} className="logo">Holo</Link>
+                        <Link to={'/'} className="logo">
+                            <img src="./images/logo.png" alt="logo" />
+                        </Link>
                     </div>
                     <div className="links-container">
                         <div className="links">
                             <Link to={'/'} className="link">Home</Link>
                             <Link to={'/account'} className="link">Account</Link>
-                            <Link to="#" className="link">Contact</Link>
-                            <Link to="#" className="link">Page</Link>
+                            <Link to={'/fyp'} className="link">Page</Link>
                         </div>
                     </div>
                     <div className="btn-container">

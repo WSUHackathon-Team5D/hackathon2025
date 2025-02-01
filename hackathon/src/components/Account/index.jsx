@@ -7,11 +7,11 @@ const Account = () => {
                 <div className="account">
                     <div className="left">
                         <div className="image-container">
-                            <img src="./images/lebron.png" alt="Profile" />
+                            <img src="./images/dog-2.jpg" alt="Profile" />
                         </div>
                         <div className="desc">
                             <div className="title">
-                                Yujaw Manandhar
+                                Jimmy
                             </div>
                             <div className="cont">
                                 <input type="text" name='age' placeholder='Age' />
@@ -23,7 +23,7 @@ const Account = () => {
                         <div className="post-container">
                             <div className="post">
                                 <div className="image-container">
-                                    <img src="./images/rajiv.png" alt="post-image" />
+                                    <img src="./images/dog-3.jpg" alt="post-image" />
                                 </div>
                                 <div className="captions">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ut?
@@ -31,7 +31,7 @@ const Account = () => {
                             </div>
                             <div className="post">
                                 <div className="image-container">
-                                    <img src="./images/rajiv.png" alt="post-image" />
+                                    <img src="./images/cat-3.jpg" alt="post-image" />
                                 </div>
                                 <div className="captions">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ut?
@@ -39,7 +39,7 @@ const Account = () => {
                             </div>
                             <div className="post">
                                 <div className="image-container">
-                                    <img src="./images/rajiv.png" alt="post-image" />
+                                    <img src="./images/dog-1.jpg" alt="post-image" />
                                 </div>
                                 <div className="captions">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, ut?

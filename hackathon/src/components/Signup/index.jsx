@@ -111,8 +111,7 @@ const Signup = () => {
                     <div className="container">
                         <div className="header">
                             <Link to='/'>
-                                {/* <img src="./images/logo_text_color.png" alt="Logo" /> */}
-                                Holo
+                                <img src="./images/logo.png" alt="Logo" />
                             </Link>
                         </div>
                         <div className="title">Create your account</div>
