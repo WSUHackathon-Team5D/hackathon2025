@@ -695,8 +695,10 @@ body {
 
             .right {
                 width: 70%;
+                max-width: 70%;
                 // border: 1px solid black;
                 overflow-y: scroll;
+                overflow-x: hidden;
 
                 .post-container {
                     width: 100%;

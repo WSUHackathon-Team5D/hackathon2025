@@ -587,7 +587,9 @@ body .account-container .account .left .desc .cont input:focus {
 }
 body .account-container .account .right {
   width: 70%;
+  max-width: 70%;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 body .account-container .account .right .post-container {
   width: 100%;
