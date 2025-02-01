@@ -670,13 +670,13 @@ body .fyp-container .fyp .right .post-container .post .controls {
   height: 7rem;
 }
 body .fyp-container .fyp .right .post-container .post .controls svg {
-  width: 1.5rem;
+  width: 2rem;
 }
 body .fyp-container .fyp .right .post-container .post .controls .up,
 body .fyp-container .fyp .right .post-container .post .controls .down {
   background: #CAA8F5;
   aspect-ratio: 1;
-  height: 4rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;

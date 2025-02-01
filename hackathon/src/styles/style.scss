@@ -40,6 +40,7 @@ body {
 
                 .logo {
                     height: 90%;
+
                     img {
                         height: 100%;
                     }
@@ -750,8 +751,6 @@ body {
         .fyp {
             width: 100%;
 
-            .left {}
-
             .right {
                 width: 100%;
                 display: flex;
@@ -791,14 +790,14 @@ body {
                             height: 7rem;
 
                             svg {
-                                width: 1.5rem;
+                                width: 2rem;
                             }
 
                             .up,
                             .down {
                                 background: $accent-color;
                                 aspect-ratio: 1;
-                                height: 4rem;
+                                height: 6rem;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -811,8 +810,6 @@ body {
                                     border-radius: .4rem;
                                 }
                             }
-
-                            .down {}
                         }
                     }
                 }
