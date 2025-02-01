@@ -16,7 +16,6 @@ body {
 }
 body .navigation-container {
   width: 100vw;
-  height: 4rem;
   padding: 0.4rem;
 }
 body .navigation-container .navigation {
@@ -512,6 +511,110 @@ body .home .right .btn-container .btn {
 }
 body .home .right .btn-container .btn:hover {
   border-radius: 2rem;
+}
+body .account-container {
+  width: 100vw;
+  height: 100%;
+  padding: 0 0.4rem;
+}
+body .account-container .account {
+  width: 100%;
+  height: calc(100vh - 9.8rem);
+  display: flex;
+  gap: 0.4rem;
+}
+body .account-container .account .left {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 0.3rem;
+  background-color: #cecece;
+  padding: 2rem;
+}
+body .account-container .account .left .image-container {
+  width: 55%;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body .account-container .account .left .image-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+body .account-container .account .left .desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .account-container .account .left .desc .title {
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+}
+body .account-container .account .left .desc .cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+body .account-container .account .left .desc .cont input {
+  border: 1px solid #230C33;
+  width: 100%;
+  aspect-ratio: 8/1;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+body .account-container .account .left .desc .cont input:focus {
+  border: 1px solid #230C33;
+}
+body .account-container .account .right {
+  width: 70%;
+  overflow-y: scroll;
+}
+body .account-container .account .right .post-container {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+}
+body .account-container .account .right .post-container .post {
+  width: 100%;
+  aspect-ratio: 3/4;
+  position: relative;
+}
+body .account-container .account .right .post-container .post .image-container {
+  width: 100%;
+  height: 80%;
+  border-radius: 0.3rem;
+}
+body .account-container .account .right .post-container .post .image-container img {
+  width: 100%;
+}
+body .account-container .account .right .post-container .post .captions {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  background: black;
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0), black);
+  color: white;
 }
 body .footer-container {
   position: fixed;
