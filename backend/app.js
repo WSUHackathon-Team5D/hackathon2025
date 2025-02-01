@@ -1,4 +1,13 @@
+const pg = require('pg');
 require('dotenv').config()
+const {Client} = pg;
+client = new Client({
+    user:'my-postgres',
+    password:'mysecretpassword',
+    host:'localhost',
+    port:5432
+})
+Client.conect;
 
 const express = require('express')
 const app = express()
