@@ -3,24 +3,29 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  color: #000;
+  color: #230C33;
   text-decoration: none;
   border: none;
   background: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  background: #eee;
+  overflow-x: hidden;
+}
 body .navigation-container {
   width: 100vw;
   height: 4rem;
-  margin: 0.2rem;
+  padding: 0.4rem;
 }
 body .navigation-container .navigation {
-  width: calc(100% - 0.4rem);
-  height: 100%;
+  width: 100%;
+  height: 4rem;
   display: flex;
   flex-direction: row;
-  background: rgba(0, 0, 255, 0.5);
+  justify-content: space-between;
+  background: rgba(35, 12, 51, 0.3);
   border-radius: 0.3rem;
 }
 body .navigation-container .navigation .logo-container {
@@ -31,7 +36,7 @@ body .navigation-container .navigation .logo-container {
   justify-content: center;
 }
 body .navigation-container .navigation .links-container {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -45,15 +50,16 @@ body .navigation-container .navigation .links-container .links {
   align-items: center;
 }
 body .navigation-container .navigation .links-container .links .link {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 500;
   position: relative;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 body .navigation-container .navigation .links-container .links .link::after {
   content: "";
   width: 0;
-  height: 0.06rem;
-  background-color: black;
+  height: 0.1rem;
+  background-color: #230C33;
   position: absolute;
   left: 50%;
   translate: -50% -50%;
@@ -64,7 +70,7 @@ body .navigation-container .navigation .links-container .links .link:hover::afte
   width: 100%;
 }
 body .navigation-container .navigation .btn-container {
-  width: 30%;
+  width: 20%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -76,7 +82,6 @@ body .navigation-container .navigation .btn-container .btn {
   display: flex;
   align-items: center;
   margin: 0 6rem;
-  gap: 2rem;
   justify-content: center;
 }
 body .navigation-container .navigation .btn-container .btn .btn_primary {
@@ -88,22 +93,24 @@ body .navigation-container .navigation .btn-container .btn .btn_primary {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
 }
 body .navigation-container .navigation .btn-container .btn .btn_primary:hover {
-  color: blue;
+  color: #592E83;
 }
 body .navigation-container .navigation .btn-container .btn .btn_secondary {
   height: 75%;
   aspect-ratio: 5/2;
-  background-color: orange;
+  background-color: #CAA8F5;
   border-radius: 0.2rem;
-  border: 1px solid black;
+  border: 1px solid #230C33;
   font-size: 0.8rem;
   cursor: pointer;
   transition: 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
 }
 body .navigation-container .navigation .btn-container .btn .btn_secondary:hover {
   border-radius: 2rem;
@@ -135,6 +142,7 @@ body .signin .signin_container .container .header a img {
   cursor: pointer;
 }
 body .signin .signin_container .container .title {
+  color: #230C33;
   font-size: 2rem;
 }
 body .signin .signin_container .container .api_login {
@@ -149,7 +157,7 @@ body .signin .signin_container .container .api_login {
 body .signin .signin_container .container .api_login button {
   width: 100%;
   aspect-ratio: 6/1;
-  border: 1px solid black;
+  border: 1px solid #230C33;
   border-radius: 0.2rem;
   font-size: 1rem;
   font-weight: 500;
@@ -183,6 +191,7 @@ body .signin .signin_container .container .separator span {
   top: 0;
   left: 50%;
   translate: -50% -50%;
+  color: #230C33;
   font-size: 0.8rem;
 }
 body .signin .signin_container .container .separator::before {
@@ -191,7 +200,7 @@ body .signin .signin_container .container .separator::before {
   top: 0;
   left: 0;
   width: 45%;
-  background: black;
+  background: #230C33;
   height: 1px;
 }
 body .signin .signin_container .container .separator::after {
@@ -200,7 +209,7 @@ body .signin .signin_container .container .separator::after {
   top: 0;
   right: 0;
   width: 45%;
-  background: black;
+  background: #230C33;
   height: 1px;
 }
 body .signin .signin_container .container .signin_form {
@@ -217,12 +226,13 @@ body .signin .signin_container .container .signin_form .input_container {
   flex-direction: column;
 }
 body .signin .signin_container .container .signin_form .input_container .desc {
+  color: #230C33;
   font-size: 0.775rem;
   font-weight: 700;
 }
 body .signin .signin_container .container .signin_form .input_container input {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #230C33;
   aspect-ratio: 7.5/1;
   border-radius: 0.4rem;
   margin: 0.3rem 0 0 0;
@@ -243,9 +253,10 @@ body .signin .signin_container .container .signin_form .check_container input[ty
 body .signin .signin_container .container .signin_form .check_container .desc {
   font-size: 0.9rem;
   font-weight: 500;
+  color: #592E83;
 }
 body .signin .signin_container .container .signin_form input[type=submit] {
-  background: orange;
+  background: #CAA8F5;
   border: 1px solid black;
   width: 100%;
   aspect-ratio: 5.35/1;
@@ -264,11 +275,12 @@ body .signin .signin_container .container .signin_footer {
 }
 body .signin .signin_container .container .signin_footer a {
   font-weight: 400;
+  color: #592E83;
 }
 body .signin .info {
   width: 67.5%;
   height: 100%;
-  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>");
+  background-image: url("../../public/images/back.svg");
 }
 body .signup {
   width: 100vw;
@@ -278,7 +290,7 @@ body .signup {
 body .signup .info {
   height: 100%;
   width: 32.5%;
-  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>");
+  background-image: url("../../public/images/back1.svg");
 }
 body .signup .signup_container {
   overflow: scroll;
@@ -303,6 +315,7 @@ body .signup .signup_container .container .header a img {
   cursor: pointer;
 }
 body .signup .signup_container .container .title {
+  color: #230C33;
   font-size: 2rem;
 }
 body .signup .signup_container .container .api_login {
@@ -318,6 +331,7 @@ body .signup .signup_container .container .api_login button {
   width: 100%;
   aspect-ratio: 6/1;
   border: 1px solid black;
+  color: #230C33;
   border-radius: 0.2rem;
   font-size: 1rem;
   font-weight: 500;
@@ -332,7 +346,7 @@ body .signup .signup_container .container .api_login button:hover {
   border-radius: 2rem;
 }
 body .signup .signup_container .container .api_login button svg {
-  fill: black;
+  fill: #230C33;
   margin: 0 0.25rem 0 0;
 }
 body .signup .signup_container .container .api_login button span {
@@ -352,7 +366,7 @@ body .signup .signup_container .container .separator span {
   top: 0;
   left: 50%;
   translate: -50% -50%;
-  color: black;
+  color: #230C33;
   font-size: 0.8rem;
 }
 body .signup .signup_container .container .separator::before {
@@ -361,7 +375,7 @@ body .signup .signup_container .container .separator::before {
   top: 0;
   left: 0;
   width: 45%;
-  background: black;
+  background: #230C33;
   height: 1px;
 }
 body .signup .signup_container .container .separator::after {
@@ -370,7 +384,7 @@ body .signup .signup_container .container .separator::after {
   top: 0;
   right: 0;
   width: 45%;
-  background: black;
+  background: #230C33;
   height: 1px;
 }
 body .signup .signup_container .container .signup_form {
@@ -387,13 +401,13 @@ body .signup .signup_container .container .signup_form .input_container {
   flex-direction: column;
 }
 body .signup .signup_container .container .signup_form .input_container .desc {
-  color: black;
+  color: #230C33;
   font-size: 0.775rem;
   font-weight: 700;
 }
 body .signup .signup_container .container .signup_form .input_container input {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #230C33;
   aspect-ratio: 7.5/1;
   border-radius: 0.2rem;
   margin: 0.5rem 0 0 0;
@@ -423,10 +437,10 @@ body .signup .signup_container .container .signup_form .terms_container .desc {
 }
 body .signup .signup_container .container .signup_form .terms_container .desc a {
   font-weight: 400;
-  color: orange;
+  color: #592E83;
 }
 body .signup .signup_container .container .signup_form input[type=submit] {
-  background: orange;
+  background: #CAA8F5;
   border: 1px solid black;
   width: 100%;
   aspect-ratio: 5.35/1;
@@ -446,4 +460,72 @@ body .signup .signup_container .container .signup_footer {
 }
 body .signup .signup_container .container .signup_footer a {
   font-weight: 400;
+  color: #592E83;
+}
+body .home {
+  margin: 4rem;
+  display: flex;
+}
+body .home .left {
+  margin: 2rem;
+}
+body .home .left .image-container {
+  width: 100%;
+  height: 100%;
+}
+body .home .left .image-container .image {
+  width: 100%;
+  height: 100%;
+}
+body .home .left .image-container .image img {
+  border-radius: 0.5rem;
+}
+body .home .right {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+body .home .right .title-container {
+  font-size: 4rem;
+  font-weight: 800;
+}
+body .home .right .desc {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+body .home .right .btn-container {
+  margin: 3rem 0;
+  height: 4rem;
+}
+body .home .right .btn-container .btn {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3/1;
+  font-size: 1.25rem;
+  border: 1px solid #230C33;
+  background-color: #CAA8F5;
+  border-radius: 0.2rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+body .home .right .btn-container .btn:hover {
+  border-radius: 2rem;
+}
+body .footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 0.4rem;
+}
+body .footer-container .footer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(35, 12, 51, 0.3);
+  height: 4rem;
+  border-radius: 0.3rem;
 }/*# sourceMappingURL=style.css.map */
