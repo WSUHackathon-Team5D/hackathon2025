@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="left">
                     <div className="title-container">
                         <div className="title">
-                            Team 5D
+                            Team5D
                         </div>
                     </div>
                     <div className="desc">
