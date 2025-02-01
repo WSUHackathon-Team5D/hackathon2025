@@ -52,8 +52,7 @@ const Login = () => {
                     <div className="container">
                         <div className="header">
                             <Link to='/'>
-                                {/* <img src="./images/logo_text_color.png" alt="Logo" /> */}
-                                Hello
+                                <img src="./images/logo.png" alt="Logo" />
                             </Link>
                         </div>
                         <div className="title">Log In to your account</div>
