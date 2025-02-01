@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body .navigation-container {
+  width: 100vw;
+  height: 4rem;
+  margin: 0.2rem;
+}
+body .navigation-container .navigation {
+  width: calc(100% - 0.4rem);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 255, 0.5);
+  border-radius: 0.3rem;
+}
+body .navigation-container .navigation .logo-container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .navigation-container .navigation .links-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .navigation-container .navigation .links-container .links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .navigation-container .navigation .links-container .links .link {
+  font-size: 0.8rem;
+  position: relative;
+  text-transform: capitalize;
+}
+body .navigation-container .navigation .links-container .links .link::after {
+  content: "";
+  width: 0;
+  height: 0.06rem;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  bottom: 0;
+  transition: 0.3s ease;
+}
+body .navigation-container .navigation .links-container .links .link:hover::after {
+  width: 100%;
+}
+body .navigation-container .navigation .btn-container {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .navigation-container .navigation .btn-container .btn {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 6rem;
+  gap: 2rem;
+  justify-content: center;
+}
+body .navigation-container .navigation .btn-container .btn .btn_primary {
+  height: 75%;
+  font-size: 0.8rem;
+  aspect-ratio: 5/2;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+body .navigation-container .navigation .btn-container .btn .btn_primary:hover {
+  color: blue;
+}
+body .navigation-container .navigation .btn-container .btn .btn_secondary {
+  height: 75%;
+  aspect-ratio: 5/2;
+  background-color: orange;
+  border-radius: 0.2rem;
+  border: 1px solid black;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+body .navigation-container .navigation .btn-container .btn .btn_secondary:hover {
+  border-radius: 2rem;
+}
+body .signin {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+body .signin .signin_container {
+  width: 32.5%;
+  padding: 3rem;
+}
+body .signin .signin_container .container {
+  width: 100%;
+}
+body .signin .signin_container .container .header {
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+body .signin .signin_container .container .header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
+body .signin .signin_container .container .header a img {
+  width: 100%;
+  cursor: pointer;
+}
+body .signin .signin_container .container .title {
+  font-size: 2rem;
+}
+body .signin .signin_container .container .api_login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 0.75rem;
+  padding: 1rem 0;
+}
+body .signin .signin_container .container .api_login button {
+  width: 100%;
+  aspect-ratio: 6/1;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 6rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+body .signin .signin_container .container .api_login button:hover {
+  border-radius: 2rem;
+}
+body .signin .signin_container .container .api_login button svg {
+  margin: 0 0.25rem 0 0;
+}
+body .signin .signin_container .container .api_login button span {
+  width: 50%;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .signin .signin_container .container .separator {
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0;
+}
+body .signin .signin_container .container .separator span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50% -50%;
+  font-size: 0.8rem;
+}
+body .signin .signin_container .container .separator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  background: black;
+  height: 1px;
+}
+body .signin .signin_container .container .separator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  background: black;
+  height: 1px;
+}
+body .signin .signin_container .container .signin_form {
+  margin: 2rem 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+body .signin .signin_container .container .signin_form .input_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body .signin .signin_container .container .signin_form .input_container .desc {
+  font-size: 0.775rem;
+  font-weight: 700;
+}
+body .signin .signin_container .container .signin_form .input_container input {
+  width: 100%;
+  border: 1px solid black;
+  aspect-ratio: 7.5/1;
+  border-radius: 0.4rem;
+  margin: 0.3rem 0 0 0;
+  padding: 0 0.75rem;
+}
+body .signin .signin_container .container .signin_form .check_container {
+  margin: 0 0.15rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+body .signin .signin_container .container .signin_form .check_container input[type=checkbox] {
+  margin: 0 0.5rem 0 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+body .signin .signin_container .container .signin_form .check_container .desc {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+body .signin .signin_container .container .signin_form input[type=submit] {
+  background: orange;
+  border: 1px solid black;
+  width: 100%;
+  aspect-ratio: 5.35/1;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+body .signin .signin_container .container .signin_form input[type=submit]:hover {
+  border-radius: 3rem;
+}
+body .signin .signin_container .container .signin_footer {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+body .signin .signin_container .container .signin_footer a {
+  font-weight: 400;
+}
+body .signin .info {
+  width: 67.5%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='60' height='60' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(160, 76%, 23%, 1)'/><path d='M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5' transform='translate(10,0)' stroke-width='1' stroke='none' fill='hsla(145, 100%, 46%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-80,-80)' fill='url(%23a)'/></svg>");
+}/*# sourceMappingURL=style.css.map */
