@@ -5,9 +5,9 @@ FROM node:18-alpine
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json
-COPY hackathon/package*.json ./
-COPY hackathon/public/ ./
-COPY hackathon/src/ ./
+COPY package*.json ./
+COPY public/ ./
+COPY src/ ./
 
 # Install dependencies
 RUN npm install
