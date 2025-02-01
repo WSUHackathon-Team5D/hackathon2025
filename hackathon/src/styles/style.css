@@ -528,4 +528,115 @@ body .footer-container .footer {
   background-color: rgba(35, 12, 51, 0.3);
   height: 4rem;
   border-radius: 0.3rem;
-}/*# sourceMappingURL=style.css.map */
+}
+body .contact {
+  margin: 4rem;
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-top: 12rem;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 1rem; /* Add spacing between left and right sections */
+}
+
+body .contact .right {
+  flex: 1; /* Allow the right section to grow */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+body .contact .right .image-container {
+  width: 100%;
+  max-width: 600px; /* Set a max-width for the image container */
+  height: auto; /* Allow the height to adjust based on the image */
+}
+
+body .contact .right .image-container .image img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0.5rem;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+body .contact .left {
+  flex: 1; /* Allow the left section to grow */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Add spacing between elements */
+}
+
+body .contact .left .title-container {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 1rem 0; /* Adjust margin */
+}
+
+body .contact .left .desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555; /* Add a subtle color for better readability */
+}
+
+body .contact .left .btn-container {
+  margin: 2rem 0; /* Adjust margin */
+}
+
+body .contact .left .btn-container .btn {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Set a fixed width */
+  font-size: 1.25rem;
+  border: 1px solid #230C33;
+  background-color: #CAA8F5;
+  border-radius: 0.2rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+body .contact .left .btn-container .btn:hover {
+  border-radius: 2rem;
+}
+
+body .footer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 0.4rem;
+}
+
+body .footer-container .footer {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(35, 12, 51, 0.3);
+  border-radius: 0.3rem;
+}
+
+body .contact .social-links {
+  display: flex;
+  gap: 1rem; /* Add spacing between social links */
+}
+
+body .contact .social-links a {
+  color: #007bff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Add spacing between icon and text */
+  text-decoration: none; /* Remove underline */
+}
+
+body .contact .social-links a:hover {
+  text-decoration: underline;
+}
+
+body .contact .social-links .icon {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

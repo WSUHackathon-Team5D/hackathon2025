@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import Login from '../components/Login'
 import Error from '../components/Error'
 import Signup from '../components/Signup'
+import Contact from '../components/Contact'
 
 const Routes = () => {
     const route = useRoutes(
@@ -15,6 +16,10 @@ const Routes = () => {
                     {
                         index: true,
                         element: <Home />
+                    },
+                    {
+                        path: '/contact',
+                        element: <Contact />
                     },
                 ]
             },
@@ -29,7 +34,7 @@ const Routes = () => {
             {
                 path: '*',
                 element: <Error />
-            }
+            },
         ]
     )
 
