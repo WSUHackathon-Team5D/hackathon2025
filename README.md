@@ -1,1 +1,32 @@
-# hackathon2025
+# Petbook
+
+Facebook for your pets!
+
+## Dockerhub
+https://hub.docker.com/repository/docker/rdalless/hackathon2025/general
+
+## Frontend
+
+### Building the image
+
+To build the frontend server image, run the following command in the hackathon directory
+```bash
+docker image build -t hackathon2025:latest .
+```
+
+To run the container:
+```bash
+docker run --name hackathon -p 3000:3000 hackathon2025
+```
+The site will be served on port 3000. View in browser at `http://localhost:3000/`
+
+To stop the container:
+```bash
+# see running images
+docker ps -a
+# stop running container
+docker stop container_name
+# remove an image
+docker rm ID_or_Name
+```
+
