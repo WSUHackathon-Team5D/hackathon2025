@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import Login from '../components/Login'
 import Error from '../components/Error'
 import Signup from '../components/Signup'
+import Account from '../components/Account'
 
 const Routes = () => {
     const route = useRoutes(
@@ -16,6 +17,10 @@ const Routes = () => {
                         index: true,
                         element: <Home />
                     },
+                    {
+                        path: '/account',
+                        element: <Account />
+                    }
                 ]
             },
             {
